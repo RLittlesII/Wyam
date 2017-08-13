@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Wyam.Common.IO;
 using Wyam.Core.Modules.IO;
 
@@ -126,6 +123,30 @@ namespace Wyam.Blog
         /// </summary>
         /// <type><see cref="FilePath"/> or <see cref="string"/></type>
         public const string AtomPath = nameof(AtomPath);
+
+        /// <summary>
+        /// Specifies the account name for Twitter for social media hyperlinks.
+        /// The default value is <c>https://twitter.com</c>. Set to <c>null</c>
+        /// to prevent generating a Twitter accoun hyperlink.
+        /// </summary>
+        /// <type><see cref="string"/></type>
+        public const string TwitterAccount = nameof(TwitterAccount);
+
+        /// <summary>
+        /// Specifies the account name for Facebook for social media hyperlinks.
+        /// The default value is <c>https://Facebook.com</c>. Set to <c>null</c>
+        /// to prevent generating a Facebook accoun hyperlink.
+        /// </summary>
+        /// <type><see cref="string"/></type>
+        public const string FacebookAccount = nameof(FacebookAccount);
+
+        /// <summary>
+        /// Specifies the account name for Github for social media hyperlinks.
+        /// The default value is <c>https://Github.com</c>. Set to <c>null</c>
+        /// to prevent generating a Github accoun hyperlink.
+        /// </summary>
+        /// <type><see cref="string"/></type>
+        public const string GithubAccount = nameof(GithubAccount);
 
         /// <summary>
         /// Specifies the path where the blog RDF file will be output.
